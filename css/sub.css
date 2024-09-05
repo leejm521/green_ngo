@@ -590,7 +590,7 @@ body{
 
     #section .spon_tab_gr .spon_tab_contents .spon_story .spon_txt_gr{
         width: 100%;
-        /* background-color: antiquewhite; */
+        background-color: antiquewhite;
     }
     #section .spon_tab_gr .spon_tab_contents .spon_story .story_txt{
         
@@ -727,15 +727,16 @@ body{
     }
     
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4{
-        background:none;
+        /* background:none; */
         /* border: 1px solid blue; */
+        padding: 20vw 0;
         height: 40vh;
         position: absolute;
-        left: 0; top: 10%;
+        left: 0; top:0;
         z-index: 1;
     }
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li:nth-child(1) .mp4{
-        display: block;
+        display: none;
     }
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .mp4>iframe{
         width: 100%;
