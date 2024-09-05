@@ -147,6 +147,7 @@ $(document).ready(function(){
             $(".campain_bn>li:first-child").stop().fadeOut().next().fadeIn().end(1000).appendTo(".campain_bn")
             }, 3000);
     
+            
         autoSlide = setInterval(function(){
             if(i == count-1){
                 i=0;
@@ -157,7 +158,16 @@ $(document).ready(function(){
         });
     });
 
-    setInterval(function(){
+    let uu = 0;
+    $(".bn_indi>li").click(function () {    
+        uu = $(this).index();
+        $(".bn_indi>li").removeClass("indi_on");
+        $(".bn_indi>li").eq(uu).addClass("indi_on");
+        $(".campain_bn>li").stop().fadeOut();
+        $(".campain_bn>li").eq(uu).stop().fadeIn();
+    });
+
+    let autoIndi = setInterval(function(){
         if(list == count2-1){
             list=0;
         }else{ list++;}
@@ -169,6 +179,31 @@ $(document).ready(function(){
         $(".bn_indi>li").removeClass("indi_on");
         $(".bn_indi>li").eq(list).addClass("indi_on");    
     }
+
+    $(".bn_indi").mouseenter(function(){
+        clearInterval(autoShow);
+        clearInterval(autoSlide);
+        clearInterval(autoIndi);
+    });
+    $(".bn_indi").mouseleave(function(){
+        autoShow = setInterval(function(){
+            $(".campain_bn>li:first-child").stop().fadeOut().next().fadeIn().end(1000).appendTo(".campain_bn")
+            }, 3000);
+        autoSlide = setInterval(function(){
+            if(i == count-1){
+                i=0;
+            }else{ i++;}
+
+            slide();
+        }, 3000);
+        autoIndi = setInterval(function(){
+            if(list == count2-1){
+                list=0;
+            }else{ list++;}
+    
+            indi();
+        }, 4000);
+    });
 
     function slide(){
         $(".slide_gr").stop().animate({"margin-left":"-66.6%"}, 300, function(){
@@ -225,6 +260,29 @@ $(document).ready(function(){
         preModel();
     });
 
+    //-- 태블릿버전
+        setInterval(function(){
+        if(i == move-1){
+            i = 0;
+        }else{
+            i++;
+        }
+        tabModel();
+    }, 2000);
+
+    function tabModel(){
+        $(".tab_slide").stop().animate({"margin-left":"-38.5%"}, 1000, function(){
+            $(".tab_slide>li").first().appendTo(".tab_slide");
+            $(".tab_slide").css({"margin-left":"-19.25%"});
+        });
+    }
+
+    //-- 모바일버전
+    setInterval(function(){
+        $(".mob_slide>li:first-child").fadeOut().next().fadeIn().end(100).appendTo(".mob_slide")
+        }, 3000);
+
+
     //--------------------홍보대사---------------//
     setInterval(function(){
         if(i == move-1){
@@ -251,7 +309,7 @@ $(document).ready(function(){
 
     // --모바일버전
     setInterval(function(){
-        $(".mob_left>li:first-child").fadeOut().next().fadeIn().end(100).appendTo(".mob_left")
+        $(".mob_left>li:first-child").fadeOut().next().show().end(100).appendTo(".mob_left")
         }, 3000);
 
 
