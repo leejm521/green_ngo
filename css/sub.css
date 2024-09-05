@@ -590,7 +590,7 @@ body{
 
     #section .spon_tab_gr .spon_tab_contents .spon_story .spon_txt_gr{
         width: 100%;
-        background-color: antiquewhite;
+        /* background-color: antiquewhite; */
     }
     #section .spon_tab_gr .spon_tab_contents .spon_story .story_txt{
         
@@ -712,7 +712,7 @@ body{
     #section .spon_tab_gr .spon_tab_contents .spon_mp4>li .spon_mp4_gr .spon_mp4_txt{
         width: 100%;
         height: 0;
-        padding-bottom: 15%;
+        /* padding-bottom: 15%; */
         /* border:1px solid blue; */
         margin-top: 0%;
         line-height: 0;
