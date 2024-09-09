@@ -530,7 +530,6 @@ body{font-family: 'SUIT', sans-serif;}
 #section .model .model_gr .model_slide>.slide_7 .slide_card{
     background-image: url(../images/index_web_model_7.png);
 }
-#section .model .model_gr .model_slide>li .slide_txt{display: none;}
 /* ----------------------홍보대사------------------------- */
 #section .sponsor{
     width: 100%; height: 49vw;
@@ -720,7 +719,6 @@ body{font-family: 'SUIT', sans-serif;}
     #section .model .model_gr .tab_slide>.tab_slide_7 .slide_card{background-image: url(../images/index_tab_model_7.png);}
     
     #section .model .model_gr .tab_slide>li .slide_txt{
-        min-width: none;
         display: block; display: flex; justify-content: space-around;
         margin-top: -10%;
     }
@@ -730,12 +728,16 @@ body{font-family: 'SUIT', sans-serif;}
         margin-top: 5%;
     }
     #section .model .model_gr .tab_slide>li .slide_txt h2{
-
         font-size: 1.3vw; font-weight: 800; color: white;
-        background-color: #0D6D53; padding: 2% 3%;
+        background-color: #0D6D53; width: 25%;
+        padding: 2% 3%;
     }
     #section .model .model_gr .tab_slide>.tab_slide_7 .slide_txt h2{
-        letter-spacing: -1px; padding: 2% 2%; font-size: 1.2vw;
+        padding: 2% 2%; font-size: 1.2vw;
+        width: 30%; margin-top: -5%;
+    }
+    #section .model .model_gr .tab_slide>.tab_slide_7 .slide_txt h3{
+        letter-spacing: -1px;
     }
 
     /* ----------------홍보대사---------------- */
