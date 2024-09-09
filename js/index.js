@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $(window).resize(function(){document.location.reload();})
     let i = 0
     let list = $(".bn_indi>li.indi_on").index();
     let count2 = $(".bn_indi>li").length;
