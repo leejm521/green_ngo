@@ -718,7 +718,9 @@ body{font-family: 'SUIT', sans-serif;}
     #section .model .model_gr .tab_slide>.tab_slide_5 .slide_card{background-image: url(../images/index_tab_model_5.png);}
     #section .model .model_gr .tab_slide>.tab_slide_6 .slide_card{background-image: url(../images/index_tab_model_6.png);}
     #section .model .model_gr .tab_slide>.tab_slide_7 .slide_card{background-image: url(../images/index_tab_model_7.png);}
+    
     #section .model .model_gr .tab_slide>li .slide_txt{
+        min-width: none;
         display: block; display: flex; justify-content: space-around;
         margin-top: -10%;
     }
@@ -728,6 +730,7 @@ body{font-family: 'SUIT', sans-serif;}
         margin-top: 5%;
     }
     #section .model .model_gr .tab_slide>li .slide_txt h2{
+
         font-size: 1.3vw; font-weight: 800; color: white;
         background-color: #0D6D53; padding: 2% 3%;
     }
