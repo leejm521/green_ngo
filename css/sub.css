@@ -28,18 +28,19 @@ body{
 }
 #section .spon_bn{
     width: 90%;
-    height: 15vw;
+    height: 20vw;
     margin: 0 auto;
     background-image: url(../images/sub_bn.png);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 } 
 #section .spon_bn>h1{
     color: white;
     font-size: 3vw;
     text-align: center;
-    padding-top: 120px;
+    line-height: 25vw;
+    /* padding-top: 120px; */
     text-shadow: 3px 1px 5px gray;
 }
 #section .spon_tab_gr .spon_tab_menu{
@@ -248,7 +249,7 @@ body{
 #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div .nanum_gr{
     width: 70%;
     /* border: 1px solid rgb(255, 0, 255); */
-    height: 55vh;
+    height: 25vw;
     margin: 0 auto;
     position: absolute;
     left: 20%; top: 10vw;
@@ -436,10 +437,11 @@ body{
 @media all and (min-width: 769px) and (max-width:1280px){
     #section .spon_bn{
         width: 100%;
-        height: 28vw;
+        height: 30vw;
     }
     #section .spon_bn>h1{
         font-size: 5vw;
+        line-height: 40vw;
     }
     #section .spon_tab_gr .spon_tab_menu{
         height: 6vh;
@@ -547,12 +549,12 @@ body{
     /* ----모바일 탭메뉴---------------------------- */
     #section .spon_bn{
         width: 100%;
-        height: 55vw;
+        height: 50vw;
         background-position: 30% 10%;
     }
     #section .spon_bn>h1{
         font-size: 7vw;
-        line-height: 5vw;
+        line-height: 70vw;
     }
     #section .spon_tab_gr .spon_tab_menu{
         display: none;
@@ -629,7 +631,7 @@ body{
     /* ----------모바일 나눔가게---------------------- */
 
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div>div{
-        height: 65vh;
+        height: 110vw;
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div{
         height: 65vh;
@@ -638,7 +640,9 @@ body{
         top: 0;
         left: 0%;
         width: 100%;
+        height: 110vw;
         position: relative;
+        /* border: 1px solid blue; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore>div .cafe{
         background:none;
@@ -665,7 +669,7 @@ body{
         position: absolute;
         height: 10vw;
         line-height: 10vw;
-        left: 15%; bottom: 0%;
+        left: 15%; bottom:10%;
         border: 3px solid rgb(147, 147, 147);
         font-size: 3.5vw;
         font-weight: bold;
@@ -685,16 +689,17 @@ body{
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_back,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_back{
         width: 100%;
-        height: 100vw;
+        height: 90vw;
         top: 0%;
         right: 0%;
+        /* border: 1px solid red; */
     }
     #section .spon_tab_gr .spon_tab_contents .nanumstore .cafe_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .hospital_card_front,
     #section .spon_tab_gr .spon_tab_contents .nanumstore .flower_card_front{
         width: 50%; height: 100vw;
         top: 20%; right:0%;
-
+        /* border: 1px solid rgb(38, 0, 255); */
     }
 
     /* ---------모바일 대표후원자---------------------------------------- */
