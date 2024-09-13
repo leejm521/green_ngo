@@ -801,6 +801,7 @@ body{font-family: 'SUIT', sans-serif;}
     #section .spon .spon_bar{
     height: 100%;
     flex-wrap: wrap;
+    /* display: none; */
     }
     #section .spon .spon_bar .spon_tab{display: none;}
     #section .spon .spon_bar .spon_tab_mob{display: block;}
